@@ -17,13 +17,13 @@ class BookController extends Controller
 
     public function index()
     {
-        return response()->json($this->bookManager->allBooks());
+        return BookResource::collection($this->bookManager->allBooks());
     }
 
     public function store(BookRequest $request)
     {
         $book = $this->bookManager->saveBook($request->validated());
-        return response()->json(BookResource::make($book), 201);
+        return new BookResource($book);
     }
 
     public function show($id)
