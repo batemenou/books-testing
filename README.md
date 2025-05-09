@@ -17,8 +17,8 @@ This is a simple Laravel-based API for managing books, built with a clean archit
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/book-api.git
-   cd book-api
+   git clone https://github.com/batemenou/books-testing
+   cd books-testing
    ```
 
 2. **Install PHP dependencies**
